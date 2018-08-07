@@ -8,7 +8,7 @@
 
 $oldTime = round(microtime(true),3);
 //used loop to make program slow and get time difference of around 1 Second
-$homepage = file_get_contents('https://cyber-risk.upguard.com/api/cloudscan/details/v2/?hostname=arusuvaica.com&apikey=B8E2538B5221195ECA3D63A9453C2A7E&secret=262C06FF063FEB1790B8DAA497E209C5');
+$homepage = file_get_contents('www.google.com');
 
 $newTime = round(microtime(true),3);
 $totalTime = $newTime - $oldTime;
