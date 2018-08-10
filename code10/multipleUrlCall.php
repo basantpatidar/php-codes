@@ -11,7 +11,6 @@ $avgtime = 0;
 for($i = 0; $i < 10; $i ++ ){
     $oldTime = round(microtime(true),3);
     $a;
-//used loop to make program slow and get time difference of around 1 Second
     $homepage = file_get_contents($website[arrayCounter]);
     $newTime = round(microtime(true),3);
     $totalTime = $newTime - $oldTime;
