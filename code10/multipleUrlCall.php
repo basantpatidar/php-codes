@@ -5,7 +5,7 @@
  * Date: 8/9/2018
  * Time: 4:20 PM
  */
- // Array with Names of multiple websites.
+ 
 $website = array('www.google.com','www.facebook.com','www.yahoo.com','www.outlook.com','www.microsoft.com','www.bing.com','www.india.com','www.apple.com','www.samsung.com','www.lg.com');
 $arrayCounter = 0;
 $avgtime = 0;
