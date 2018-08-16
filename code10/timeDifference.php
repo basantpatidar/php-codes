@@ -7,7 +7,7 @@
  */
 
 $oldTime = round(microtime(true),3);
-//used loop to make program slow and get time difference of around 1 Second
+//used loop to make program slow and get time difference of around 1 Second.
 $homepage = file_get_contents('www.google.com');
 
 $newTime = round(microtime(true),3);
