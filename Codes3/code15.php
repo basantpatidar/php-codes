@@ -5,6 +5,7 @@
  * Date: 2/23/2018
  * Time: 3:56 PM
  */
+//Date and time printing
 echo "Today's Date is " . date("m/d/Y") . "<br>";
 $date    =    date("m/d/y");
 
