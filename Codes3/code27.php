@@ -5,6 +5,7 @@
  * Date: 2/26/2018
  * Time: 1:20 AM
  */
+//Code27
 for($pqr = 0;$pqr < 10; $pqr ++){
     print"pqr ";
 } print"<br>";
