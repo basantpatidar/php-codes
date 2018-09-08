@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+ <TITLE>HTML2</TITLE>
+</HEAD>
+<BODY>
+ <H1>Please fill the form</H1>
+ <form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname">
+  <input type="text" name="Address"><br>
+  Last name:<br>
+  <input type="text" name="E-mail">
+</form>
+ <P>Hello. Tell me a little about yourself here.</P>
+</BODY>
+</HTML>
