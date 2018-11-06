@@ -1,6 +1,6 @@
 
 <table width="270px" cellspacing="0px" cellpadding="1px" border="2px">
-    <?php
+    <?php  //printing table using loop
     for($row=1;$row<=9;$row++)
     {
         echo "<tr>";
