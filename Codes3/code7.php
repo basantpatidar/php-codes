@@ -4,6 +4,7 @@
  * User: basant
  * Date: 2/23/2018
  * Time: 12:30 PM
+ * Array "color"
  */
 $color = array('white','green','red','blue','black');
 print "The memory of that scene for me is like a frame of film forever frozen at that
