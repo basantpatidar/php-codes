@@ -5,6 +5,7 @@
  * Date: 2/23/2018
  * Time: 1:29 PM
  */
+// Associative Array
 $capitals = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg",
     "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki",
     "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana",
