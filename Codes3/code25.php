@@ -15,7 +15,7 @@ for($i = 0; $i < 11; $i ++) {
             print"*";
         }
     }
-
+//Inner for loop
     if ($i > 4) {
         for ($k = $l; $k > 0; $k--) {
             print"*";
