@@ -1,4 +1,5 @@
 <html>
+    <!-- Table using For loop -->
 <head>
     <style>
         td,tr,table{border : 1px solid black; width : 20%; height: 20%;
