@@ -5,7 +5,7 @@
  * Date: 8/1/2018
  * Time: 9:51 PM
  */
-
+// Rounding old time
 $oldTime = round(microtime(true),3);
 //used loop to make program slow and get time difference of around 1 Second.
 $homepage = file_get_contents('www.google.com');
