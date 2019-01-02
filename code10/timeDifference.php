@@ -20,6 +20,7 @@ echo "Converted into Milliseconds : ".round($totalTime * 1000 );
 
 
 //On Console Printing
+// printing Old time, New time and time difference on console log
 echo "<script>console.log(\"Old Time : ".$oldTime."\")</script>";
 echo "<script>console.log(\"New Time : ".$newTime."\")</script>";
 echo "<script>console.log(\"Calculated Time in Seconds up to 3 Decimals : ".$totalTime."\")</script>";
