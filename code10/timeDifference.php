@@ -5,7 +5,7 @@
  * Date: 8/1/2018
  * Time: 9:51 PM
  */
-
+// Rounding old time
 $oldTime = round(microtime(true),3);
 //used loop to make program slow and get time difference of around 1 Second.
 $homepage = file_get_contents('www.google.com');
@@ -20,6 +20,7 @@ echo "Converted into Milliseconds : ".round($totalTime * 1000 );
 
 
 //On Console Printing
+// printing Old time, New time and time difference on console log
 echo "<script>console.log(\"Old Time : ".$oldTime."\")</script>";
 echo "<script>console.log(\"New Time : ".$newTime."\")</script>";
 echo "<script>console.log(\"Calculated Time in Seconds up to 3 Decimals : ".$totalTime."\")</script>";

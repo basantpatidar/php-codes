@@ -14,6 +14,7 @@ if($i =5) {
     echo "ny";
 }
 */
+//Use of Array and password checker 
 
 $users = array(
     (object)array('username' => 'basant', 'password' => 'secret'),

@@ -7,7 +7,8 @@
  */
 for($i = 150; $i <= 500; $i ++){
     if($i % 6 == 0){
-        print($i);
+        print("value of I :");
+        print($i); //printing value of i variable 
         print"<br>";
     }
 }
