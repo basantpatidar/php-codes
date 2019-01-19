@@ -1,82 +1,234 @@
 <?php
 /**
- * PraviinM
+ * Created by PhpStorm.
+ * User: PraviinM
+ * Date: 2/7/16
+ * Time: 1:55 PM
  */
+
 ?>
-<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
-    'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
-<html xmlns='http://www.w3.org/1999/xhtml'>
-<head>
-    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
-    <title>
-        FIRST CRUD
-    </title>
-    <!-- Style -- Can also be included as a file usually style.css -->
-    <style type="text/css">
-        table.table-style-three {
-            font-family: verdana, arial, sans-serif;
-            font-size: 11px;
-            color: #333333;
-            border-width: 1px;
-            border-color: #3A3A3A;
-            border-collapse: collapse;
-        }
 
-        table.table-style-three th {
-            border-width: 1px;
-            padding: 8px;
-            border-style: solid;
-            border-color: #FFA6A6;
-            background-color: #D56A6A;
-            color: #ffffff;
-        }
-
-        table.table-style-three a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-
-        table.table-style-three tr:hover td {
-            cursor: pointer;
-        }
-
-        table.table-style-three tr:nth-child(even) td {
-            background-color: #F7CFCF;
-        }
-
-        table.table-style-three td {
-            border-width: 1px;
-            padding: 8px;
-            border-style: solid;
-            border-color: #FFA6A6;
-            background-color: #ffffff;
-        }
-    </style>
-
-</head>
+<!DOCTYPE html>
+<?php //ob_start('ob_gzhandler'); // stores html until fully compiled and gzips it so it can be displayed at once.?>
+<html>
 <body>
 
-<?php require_once("config.php"); ?>
+<h2>Code 1</h2>
+<?php  // This code displays two strings.
+echo "<h3>"."This is my first program"."</h3>";
+echo "<h5>"."I am trying to print a string in the browser window"."</h5>";
+?>
 
-<!-- Table goes in the document BODY -->
-<table class="table-style-three">
-    <thead>
-    <!-- Display CRUD options in TH format -->
-    <tr>
-        <th><a href="createNewRecord.php">Create a new record (C)</a></th>
-    </tr>
-    <tr>
-        <th><a href="displayAllRecords.php">Read All Record information (R)</a></th>
-    </tr>
-    <tr>
-        <th><a href="displayAllRecords.php">Update A Record (U)</a></th>
-    </tr>
-    <tr>
-        <th><a href="displayAllRecords.php">Delete A Record (D)</a></th>
-    </tr>
+<h2>Code 2</h2>
+<?php // This code displays two strings that have been stored as variables.
+$string1 = 'First String assigned to a variable called $string1';
+$string2 = 'Second String assigned to a variable called $string2';
 
-    </thead>
-</table>
+echo "<h3>".$string1."</h3>";
+echo "<h5>".$string2."</h5>";
+?>
+
+<h2>Code 3</h2>
+<?php // This code stores two numbers in variables and then performs math functions on those numbers
+$number1 = '5';
+$number2 = '10';
+
+echo "<h3>I am demonstrating different arithmetic functions</h3>";
+echo "Addition : ".($number1 + $number2)."<br><br>";
+echo "Subtraction : ".($number1 - $number2)."<br><br>";
+echo "Division : ".($number1 / $number2)."<br><br>";
+echo "Multiplication : ".($number1 * $number2)."<br><br>";
+?>
+
+<h2>Code 4</h2>
+<?php  // This code stores two additional numbers in variables and then performs math functions on those numbers
+$number1 = '5';
+$number2 = '10';
+
+$newnum1 = '100';
+$newnum2 = '500';
+
+
+echo "<h3>I am demonstrating different arithmetic functions</h3>";
+echo "Addition : ".(($number1 + $number2) + ($newnum1 + $newnum2))."<br><br>";
+echo "Subtraction : ".(($newnum1 - $newnum2) - ($number1 - $number2))."<br><br>";
+echo "Division : ".(($newnum1 / $newnum2)/($number1 / $number2))."<br><br>";
+echo "Multiplication : ".(($newnum1 * $newnum2)*($number1 * $number2))."<br><br>";
+?>
+
+<h2>Code 5</h2>
+<?php  	// This code appends sequential numbers to the end of a string
+$d = 'U00123';
+
+echo "Sample output: <br>";
+// Loops variable $i from 1 to 10 and appends it to the end of string $d
+for ($i=1; $i<11; $i++) {
+  echo $d . $i. "<br>";
+}
+?>
+
+<h2>Code 6</h2>
+<?php 	//This code stores color strings in an array and inserts the string from the appropriate array element into the output string
+$color = array('white', 'green', 'red', 'blue', 'black');
+// strtoupper is used to make capitalize all letters in color to make output more obvious.
+echo "The memory of that scene for me is like a frame of film forever frozen at that moment: the ". strtoupper($color[2]) ." carpet, the ". strtoupper($color[1]) ." lawn, the ". strtoupper($color[0]) ." house, the leaden sky. The new president and his first lady.
+	- Richard M. Nixon";
+?>
+
+<h2>Code 7</h2>
+<?php 	// This code displays a list of key value pairs in order
+$capitals
+  = array( "Italy" =>"Rome", "Luxembourg"=>"Luxembourg",
+           "Belgium"=> "Brussels", "Denmark"=>"Copenhagen", "Finland"=>"Helsinki",
+           "France" => "Paris", "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana",
+           "Germany" => "Berlin", "Greece" => "Athens", "Ireland"=>"Dublin",
+           "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon", "Spain"=>"Madrid",
+           "Sweden"=>"Stockholm", "United Kingdom"=>"London",
+           "Cyprus"=>"Nicosia", "Lithuania"=>"Vilnius", "Czech Republic"=>"Prague",
+           "Estonia"=>"Tallin", "Hungary"=>"Budapest", "Latvia"=>"Riga",
+           "Malta"=>"Valetta", "Austria" => "Vienna", "Poland"=>"Warsaw") ;
+
+ksort($capitals); // sorts the array by the key
+// Each key and value from the array are inserted into the displayed string
+foreach($capitals as $key => $value) {
+  echo "The capital of " .$key." is " .$value.".<br>";
+}
+?>
+
+<h2>Code 8</h2>
+<?php 	// This code declares min and max variables for the rand() fuction and
+// displays 5 numbers generated randomly by the fuction.
+$min = 20;  // smallest number generated by rand()
+$max = 29;  // largest number generated by rand()
+
+echo "Sample range: (".$min.", ".$max.")<br>";
+for ($i=0; $i<5; $i++){
+  echo rand($min,$max)."<br>";
+}
+?>
+
+<h2>Code 9</h2>
+<?php 	// This code displays 1-10 seperated by dash
+// Loop to display 1-9 with dash
+for ($i=1; $i<10; $i++){
+  echo $i."-";
+}
+echo $i; //after loop last digit is displayed with no trailing dash
+?>
+
+<h2>Code 10</h2>
+<?php 	// This code gives the sum of all integers between and not including 0 and 30
+$total=0; // initiat total sum to 0
+// loop through each integer from 1 to 29 and add them to the total
+for ($i=1; $i<30; $i++){
+  $total += $i;
+}
+echo $total;
+?>
+
+<h2>Code 11</h2>
+<?php // This code uses nested loops to display a star triangle
+// outer loop determines number of rows (5)
+for ($x=1; $x<6; $x++){
+  // inner loop uses outer loop index to determine number of stars in row
+  // as outer loop increases by one, number of stars in row will increase same
+  for ($y=0; $y<$x; $y++) {
+    echo "* ";
+  }
+  echo "<br>";
+}
+?>
+
+<h2>Code 12</h2>
+<!-- This code uses html table to produce a checker board.
+	 td styling gives the width and height of each square
+	 nth-child is used to color every other square-->
+<style>
+    table { border-collapse: collapse;}
+    td { height: 30px; width: 30px; border: 2px solid gray;}
+    tr:nth-child(even) td:nth-child(odd) { background-color: black; }
+    tr:nth-child(odd) td:nth-child(even) { background-color: black; }
+</style>
+    <table style="width: 270px">
+        <?php
+        // nested for loops are used to ten rows with ten cells each for the board
+        for ($x=0; $x<10; $x++){
+          echo "<tr>";
+          for ($y=0; $y<10; $y++) {
+            echo "<td></td>";
+          }
+          echo "</tr>";
+        }
+
+        ?>
+    </table>
+
+<h2>Code 13</h2>
+<!-- This code displays a copywrite using date(). &copy; displays copywrite symbol -->
+<footer>
+	&copy; <?php echo date("Y") ?>
+</footer>
+
+<h2>Code 14</h2>
+<?php 	// This code uses date() to display the date in different formats
+echo date("Y/m/d")."<br>";
+echo date("y.m.d")."<br>";
+echo date("d-m-y")."<br>";
+?>
+
+<h2>Code 15</h2>
+<?php 	// This code creates two dates and then calculates and diplays the difference
+$date1=date_create("1981-04-26"); 	// create start date
+$date2=date_create(date("Y-m-d"));	// create end data as current date
+$diff=date_diff($date1,$date2);		// calculate difference between dates
+
+echo $diff->format("%Y years, %m months, %d days"); // display formatted difference
+?>
+
+<h2>Code 16</h2>
+<?php 	// This code displays a string with different capitalizatoin formatting
+$str = "go get 'em tiger!";
+
+echo strtolower($str)."<br>";	// display all letters lower case
+echo strtoupper($str)."<br>";	// display all letters upper case
+echo ucfirst($str)."<br>";		// display first letter only upper case
+// display first letter each word upper case. determine words by delimiters tab, return, linefeed, formfeed, vert tab
+echo ucwords($str, $delimiters = " \t\r\n\f\v")."<br>";
+?>
+
+<h2>Code 17</h2>
+<?php 	// This code displays the file name from a URL
+$url = "www.example.com/public_html/index.php";
+echo basename($url);
+?>
+
+<h2>Code 18</h2>
+<?php 	// This code produces a random password with length defined in $pwLength
+$pwLength = 8;	// length of password
+// str_repeat allows characters to be repeated, str_shuffle randomizes characters,
+// substr removes $pwLength characters from the start of the string
+$pw = substr(str_shuffle(str_repeat('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',5)),0,$pwLength);
+echo $pw;
+?>
+
+<h2>Code 19</h2>
+<?php 	// This code displays the end string from a URL
+$url = "http://www.example.com/5478631";
+echo basename($url);
+?>
+
+<h2>Code 20</h2>
+<?php 	// This code displays the alphabet in order
+$str = 'a';	// starts at 'a'
+// loops through 26 letters printing each one
+for ($i=0; $i<26; $i++) {
+  echo $str;
+  $str = ++$str; // increments to the next character in the alphabet
+}
+?>
 
 </body>
 </html>
+<?php //ob_end_flush(); // sends the buffered html and stops buffering ?>
+
+
