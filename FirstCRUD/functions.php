@@ -1,6 +1,6 @@
 <?php
 /**
- * PraviinM
+ *user : Basant
  */
 
 
@@ -8,6 +8,8 @@
 /**
  * @return array
  */
+
+//Get all users
 function fetchAllUsers()
 {
     global $mysqli, $db_table_prefix;
