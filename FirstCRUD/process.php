@@ -1,11 +1,6 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: pmandhare
- * Date: 2/11/16
- * Time: 7:32 PM
- */
-
 ?>
 
 <?php
